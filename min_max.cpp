@@ -28,7 +28,6 @@ void minmax(int arr[], int l, int h, int &min, int &max)
             if (arr[l] > max)
                 max = arr[l];
         }
-
         return;
     }
     else
@@ -51,5 +50,6 @@ int main()
     minmax(arr, 0, n - 1, min, max);
     cout << "min= " << min << endl;
     cout << "max= " << max << endl;
+    cout<<"number of comparisions= "<<floor(((3*n)/2)-2)<<endl;
     return 0;
 }

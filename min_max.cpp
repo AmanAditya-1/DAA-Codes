@@ -50,13 +50,15 @@ int main()
 {
     int n, min = INT_MAX, max = INT_MIN;
     int arr[n];
+    cout<<"Enter size of array : ";
     cin >> n;
+    cout<<"Enter elements of array : "<<endl;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
     minmax(arr, 0, n - 1, min, max);
-    cout << "min= " << min << endl;
+    cout << "\nmin= " << min << endl;
     cout << "max= " << max << endl;
     cout<<"number of comparisions= "<<cnt<<endl;
     return 0;

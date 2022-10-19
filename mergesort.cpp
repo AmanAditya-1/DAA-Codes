@@ -29,7 +29,7 @@ void merge(int arr[], int l, int mid, int h)
     {
         b[k++] = arr[j++];
     }
-    // Here we are copying the data of the new formed array to the original array at the right index.That's why we are intializing k=0 and x=l.
+    // Here we are copying the data of the new formed array to the original array at the correct index.That's why we are intializing k=0 and x=l.
     for (k = 0, x = l; k < h - l + 1; k++, x++)
     {
         arr[x] = b[k];
@@ -60,7 +60,9 @@ int main()
 {
     int n;
     int arr[n];
+    cout<<"Enter the size of the array : ";
     cin >> n;
+    cout<<"Enter the elements of the array : "<<endl;
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
